@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: aquamarine;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  flex: 1;
+  flex-direction: column;
+  text-align: center;
+}
+
+/*============
+header styling
+===============*/
+
+.header {
+  background: black;
+  display: flex;
+  color: white;
+  padding: 13px 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =========
+header logo
+=========== */
+.header-logo{
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header-logo span{
+  font-size: 22px;
+}
+
+.link a{
+  text-decoration: none;
+  color: white;
+}
+
+/* ============
+Small screen orientation
+=========== */
+@media screen and (max-width: 512px) {
+  .header {
+    padding: 12px 17px;
+  }
+}
+
+.swt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.switch {
+  width: 30px;
+  border-radius: 50%;
+  height: 30px;
+  background-color: blueviolet;
+  cursor: pointer;
+}
+
+.wrapper {
+  margin: 80px auto;
+  border: 2px solid gray;
+  border-radius: 10px;
+  width: 550px;
+  padding: 10px;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.8);
+}
+
+/* ============
+Small screen orientation
+=========== */
+@media screen and (max-width: 512px) {
+  .wrapper {
+    margin: 50px auto;
+    border: 2px solid gray;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.8);
+  }
+}
+
+/* =========
+Time heading
+=========== */
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* =========
+Time display
+============*/
+.display {
+  font-size: 18vw;
+  font-weight: bold;
+}
+
+/* =======
+button group
+========== */
+.bttn {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.btn {
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin: 10px 15px;
+  border: 2px solid black;
+  color: black;
+  cursor: pointer;
+  width: 100px;
+}
+
+.btn:nth-child(1):hover {
+  color: white;
+  background: green;
+}
+
+.btn:nth-child(2) {
+  background-color: skyblue;
+}
+
+.btn:nth-child(3):hover {
+  color: white;
+  background: rgb(204, 7, 7);
+}
+
+/*=============
+footer styling
+================ */
+
+.footer {
+  background: black;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  color: gray;
+  padding: 10px 10px;
+}
+
+.footer a {
+  color: gray;
+  text-decoration: none;
+}
+
+/*==========
+footer styling
+========= */
