@@ -91,7 +91,7 @@ Small screen orientation
 =========== */
 @media screen and (max-width: 512px) {
   .wrapper {
-    margin: 50px auto;
+    margin: 100px auto;
     border: 2px solid gray;
     border-radius: 10px;
     width: 300px;
